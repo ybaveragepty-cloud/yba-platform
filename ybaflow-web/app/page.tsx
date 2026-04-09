@@ -4,6 +4,7 @@ import Audience from "@/components/Audience";
 import TerraIntro from "@/components/TerraIntro";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import TerraShowcase from "@/components/TerraShowcase";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <Hero />
 
       <Features />
+
+      <TerraShowcase />
 
       <section className="bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
