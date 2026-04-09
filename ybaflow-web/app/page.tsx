@@ -1,32 +1,34 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Audience from "@/components/Audience";
-import TerraIntro from "@/components/TerraIntro";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import TerraShowcase from "@/components/TerraShowcase";
+import PremiumHero from "@/components/PremiumHero";
+import FlowExplanation from "@/components/FlowExplanation";
+import TerraIntroduction from "@/components/TerraIntroduction";
+import TerraAI from "@/components/TerraAI";
+import SystemConnections from "@/components/SystemConnections";
+import ComingSoon from "@/components/ComingSoon";
+import FinalCTA from "@/components/FinalCTA";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
-      <Hero />
+    <main className="min-h-screen bg-black text-white font-exo overflow-x-hidden">
+      {/* Hero Section - Control the Flow of Intelligent Systems */}
+      <PremiumHero />
 
-      <Features />
+      {/* What is YBA Flow - Platform explanation */}
+      <FlowExplanation />
 
-      <TerraShowcase />
+      {/* Introducing YBA Terra - First real-world system */}
+      <TerraIntroduction />
 
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-2">
-            <Audience />
-            <TerraIntro />
-          </div>
-        </div>
-      </section>
+      {/* Terra AI - The intelligence differentiator */}
+      <TerraAI />
 
-      <Contact />
+      {/* How It All Connects - Flow → Terra → Terra AI */}
+      <SystemConnections />
 
-      <Footer />
+      {/* Coming Soon - Future YBA products */}
+      <ComingSoon />
+
+      {/* Final CTA - Don't Build Average Systems */}
+      <FinalCTA />
     </main>
   );
 }
