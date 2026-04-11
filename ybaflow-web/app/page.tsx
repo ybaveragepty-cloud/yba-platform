@@ -1,5 +1,5 @@
-import BillionDollarLanding from "@/components/BillionDollarLanding";
+import YBAFlowLanding from "@/components/YBAFlowLanding";
 
 export default function Home() {
-  return <BillionDollarLanding />;
+  return <YBAFlowLanding />;
 }
